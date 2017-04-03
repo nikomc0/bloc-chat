@@ -1,0 +1,23 @@
+{
+  "name": "bloc-chat",
+  "version": "0.0.1",
+  "description": "A real-time chat application.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nikomc0/bloc-chat.git"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Dominick Del Bosque",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "~7.5.0",
+    "path": "^0.4.9"
+  },
+  "devDependencies": {
+    "connect-modrewrite": "^0.7.9",
+    "es5-shim": "^4.0.1"
+  }
+}
