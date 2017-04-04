@@ -1,0 +1,46 @@
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+
+html {
+  height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Open Sans'; /* sets our font to the "Open Sans" typeface */
+  color: white;             /* sets the text color to white */
+  min-height: 100%;         /* says the height of the body must be, at minimum, 100% of the window */
+  margin: 0px;
+
+}
+
+.chat-rooms {
+	position: absolute;
+	right: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .3);
+	width: 200px;
+	height: 100%;
+	padding-left: 20px;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 28px;
+	font-weight: 400;
+}
+
+h3 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+}
