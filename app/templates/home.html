@@ -1,0 +1,10 @@
+<section ng-controller="RoomsCtrl as rooms">
+	<div class="chat-rooms">
+		<h1>Bloc Chat</h1>
+		<a class="btn btn-default">New Room</a>
+		
+		<div class="rooms-list" ng-repeat="room in rooms">
+				<a class="room-names"><p>Room {{ $index + 1 }}</p></a>
+		</div>
+	</div>
+</section>

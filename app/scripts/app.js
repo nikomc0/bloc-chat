@@ -9,7 +9,7 @@
 			.state('rooms', {
 				url: '/',
 				controller: 'RoomsCtrl as rooms',
-				templateUrl: '/templates/rooms.html'
+				templateUrl: '/templates/home.html'
 			});
 	}
 	angular
