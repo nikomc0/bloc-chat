@@ -10,9 +10,14 @@
 				url: '/',
 				controller: 'RoomsCtrl as rooms',
 				templateUrl: '/templates/home.html'
+			})
+			.state('add-room', {
+				url: '/',
+				controller: 'AddRoomCtrl as addRoom',
+				templateUrl: '/templates/add-room.html'
 			});
 	}
 	angular
-		.module('blocChat', ['ui.router', 'firebase'])
+		.module('blocChat', ['ui.router', 'firebase', 'ui.bootstrap'])
 		.config(config);
 })();
