@@ -3,9 +3,9 @@
 		this.rooms = Room.all;
 		
 		this.open = function () {
-			var modalInstance = $uibModal.open({
-				templateUrl: '/templates/add-room.html',
-				controller: 'RoomsCtrl',
+			$uibModal.open({
+				templateUrl: '/templates/addroom.html',
+				controller: 'AddRoomCtrl',
 			});
 		};
 		
