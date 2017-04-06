@@ -3,16 +3,15 @@
 		var ref = firebase.database().ref().child('rooms');
 		var rooms = $firebaseArray(ref);
 		
-		var chatRooms = {};
-		
-		chatRooms.addRoom = function (room) {
-			rooms.$add(room);	
-			
-			return chatRooms;
-		};
+//		var addRoom = function (room) {
+//			rooms.$add(room);
+//		};
 		
 		return {
-			all: rooms
+			all: rooms,
+			addRoom: function (room) {
+				rooms.$add(room);
+			}
 		};
 	}
 	
