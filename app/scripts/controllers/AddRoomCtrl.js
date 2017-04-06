@@ -1,6 +1,6 @@
 (function () {
-	function AddRoomCtrl($uibModalInstance) {
-
+	function AddRoomCtrl ($uibModalInstance) {
+		
 	}
 	angular
 		.module ('blocChat')

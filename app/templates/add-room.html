@@ -1,7 +1,16 @@
-<form>
-	<div>
-		<h1 class="modal-title">Create New Room</h1>
-	</div>
-	
-	<div class='modal-body'>j;akflkasd</div>
-</form>
+<script type="text/ng-template" id="add-room.html">
+	<form>
+	  <div class="modal-header">
+		<h1>Create new room</h1>
+	  </div>
+		<div class="modal-body">
+			<div class="form-group">
+			  <input type="text" name="text" class="form-control" placeholder="Enter room name">
+			</div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-default">Cancel</button>
+		  <input type="submit" id="submit" value="Submit" class="btn btn-primary">
+		</div>
+	</form>
+</script>

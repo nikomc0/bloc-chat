@@ -12,7 +12,7 @@
 		};
 		
 		return {
-			all: rooms,
+			all: rooms
 		};
 	}
 	

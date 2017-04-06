@@ -11,10 +11,10 @@
 				controller: 'RoomsCtrl as rooms',
 				templateUrl: '/templates/home.html'
 			})
-			.state('add-room', {
+			.state('addRoom', {
 				url: '/',
 				controller: 'AddRoomCtrl as addRoom',
-				templateUrl: '/templates/add-room.html'
+				templateUrl: '/templates/add-room.html',
 			});
 	}
 	angular
