@@ -5,11 +5,9 @@
 		this.open = function () {
 			$uibModal.open({
 				templateUrl: '/templates/addroom.html',
-				controller: 'AddRoomCtrl',
+				controller: 'AddRoomCtrl as addRoom'
 			});
 		};
-		
-		return this.rooms;
 	}
 	angular
 		.module('blocChat')
