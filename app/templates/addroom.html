@@ -1,0 +1,16 @@
+<form class="form-horizontal">
+	<div class="form-group form-group-lg">
+		<div class="modal-title">
+			<h2>Create new room</h2>
+		</div>
+		
+		<div class="modal-body">
+			<input class="form-control modal-input" type="text" placeholder="Enter a room name" ng-model="newRoom"/>
+		</div>
+		
+		<div>
+			<button type="button" class="btn btn-lg" ng-click="addRoom.cancel()">Cancel</button>
+			<button type="submit" id="submit" value="submit" class="btn btn-lg btn-success" ng-click="addRoom.add(newRoom)">Create Room</button>
+		</div>
+	</div>
+</form>

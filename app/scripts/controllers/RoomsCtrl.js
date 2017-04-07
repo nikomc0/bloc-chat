@@ -1,10 +1,15 @@
 (function () {
-	function RoomsCtrl(Room) {
-		this.room = Room.all;
+	function RoomsCtrl(Room, $uibModal) {
+		this.rooms = Room.all;
 		
-		return this.room;
+		this.open = function () {
+			$uibModal.open({
+				templateUrl: '/templates/addroom.html',
+				controller: 'AddRoomCtrl as addRoom'
+			});
+		};
 	}
 	angular
 		.module('blocChat')
-		.controller('RoomsCtrl', ['Room', RoomsCtrl]);
+		.controller('RoomsCtrl', ['Room', '$uibModal', RoomsCtrl]);
 })();

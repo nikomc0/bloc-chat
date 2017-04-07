@@ -4,6 +4,8 @@
   box-sizing: border-box;
 } 
 
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
 html {
   height: 100%; /* makes sure our HTML takes up 100% of the browser window */
   font-size: 100%;
@@ -31,6 +33,7 @@ h1 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
 	font-weight: 700;
+	color:white !important;
 }
 
 h2 {
@@ -56,4 +59,24 @@ h3 {
 
 .room-names {
 	color: white;
+}
+
+.modal-content {
+	width: 500px;
+	text-align: center;
+	border-radius: 0;
+	padding: 20px;
+}
+
+.modal-input {
+	padding-bottom: 1rem;
+	margin: 0 auto;
+}
+
+.modal-input input {
+	width: 75%;
+}
+
+.modal-title h2 {
+	color: dimgray; 
 }
