@@ -33,19 +33,26 @@ h1 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
 	font-weight: 700;
-	color:white !important;
+	color: white;
 }
 
 h2 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 28px;
 	font-weight: 400;
+	color: dimgray;
 }
 
 h3 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	font-weight: 200;
+	color: dimgray;
+}
+
+.messages {
+	padding-left: 20px;
+	font-size: 18px;
 }
 
 .rooms-list {
@@ -79,4 +86,49 @@ h3 {
 
 .modal-title h2 {
 	color: dimgray; 
+}
+
+.left {
+	width:100%;
+	display: block;
+}
+.right {
+	padding-left:200px;
+	width:100%;
+	display: inline-block;
+}
+
+.messages h1 {
+	color: dimgrey;
+}
+
+.odd {
+	padding: 15px;
+	color: dimgray;
+	background-color: lightgrey;
+}
+
+.even {
+	padding: 15px;
+	color: dimgray;
+	background-color: white;
+}
+
+.message-info {
+	font-size: 1rem;
+	letter-spacing: .05em;
+	font-weight: 600;
+}
+
+.message-content {
+	font-size: 1rem;
+}
+
+.message-timestamp {
+	font-size: 14px;
+	color:lightslategrey;
+}
+
+.chat-room {
+	font-weight:400;
 }

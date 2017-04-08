@@ -1,6 +1,5 @@
 (function () {
 	function AddRoomCtrl (Room, $uibModalInstance) {
-	
 		this.add = function (newRoom) {
 			Room.addRoom(newRoom);
 			this.cancel();
