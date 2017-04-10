@@ -1,0 +1,15 @@
+<form class="form-horizontal">
+	<div class="form-group form-group-lg">
+		<div class="modal-title">
+			<h2>Set a Username</h2>
+		</div>
+		
+		<div class="modal-body">
+			<input class="form-control modal-input" type="text" placeholder="Enter a room name" ng-model="newUser"/>
+		</div>
+		
+		<div>
+			<button type="submit" id="submit" value="submit" class="btn btn-lg btn-success" ng-click="setUser.setUser(newUser)" ng-disabled="!newUser">Set Username</button>
+		</div>
+	</div>
+</form>
