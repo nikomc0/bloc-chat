@@ -25,9 +25,12 @@
 		this.sendMessage = function (newMessage) {
 			if (newMessage) {
 				Message.send(newMessage, this.chatRoom);
-				Room.gotoBottom();
 				this.newMessage = '';
 			}
+		};
+		
+		this.gotoBottom = function () {
+			Room.gotoBottom();	
 		};
 	}
 	angular

@@ -1,5 +1,4 @@
 <section class="chat-rooms">
-	
 		<div>
 			<h1>Bloc Chat</h1>
 			<button type="button" class="btn btn-default" ng-click="rooms.open()">New Room</button>
@@ -18,7 +17,6 @@
 				</div>
 			</div>
 		</div>
-
 </section>
 
 <section class="message-container">
@@ -41,7 +39,7 @@
 				</div>
 			</div>
 		</div>
-	<a id="bottom"></a>
+	<a id="bottom" href="/"> </a>
 </section>
 
 <section class="input-container">
@@ -51,7 +49,7 @@
 				<input class="form-control input-lg" type="text" placeholder="Write your message." ng-model="rooms.newMessage"/>
 				</div>
 				<div class="col-md-3">
-				<button type="submit" id="submit" value="submit" class="btn btn-lg btn-default send-message" ng-click="rooms.sendMessage(rooms.newMessage)" ng-disabled="!rooms.newMessage">Send Message</button>
+				<button type="submit" id="submit" value="submit" class="btn btn-lg btn-default send-message" ng-click="rooms.gotoBottom(); rooms.sendMessage(rooms.newMessage)" ng-disabled="!rooms.newMessage">Send Message</button>
 				</div>
 			</div>
 		</form>
