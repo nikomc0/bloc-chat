@@ -1,5 +1,5 @@
-<section>
-	<div class="chat-rooms">
+<section class="chat-rooms">
+	
 		<div>
 			<h1>Bloc Chat</h1>
 			<button type="button" class="btn btn-default" ng-click="rooms.open()">New Room</button>
@@ -9,18 +9,31 @@
 				<p>{{ room.$value }}</p>
 			</a>
 		</div>
-	</div>
+
 </section>
 
-<section class="right">
-	<div class="messages">
-		<h3 class="chat-room">{{ rooms.currentRoom }}</h3>
-	</div>
-	<div ng-repeat="message in rooms.messages">
-		<div ng-class-odd="'odd'" ng-class-even="'even'">
-			<span class="message-info">{{ message.name }}</span> - <span class="message-timestamp">{{ message.sentAt }}</span>
-			</br>
-			<span class="message-content">{{ message.content }}</span>
+<section class="message-container">
+
+		<div class="messages">
+			<h3 class="chat-room">{{ rooms.currentRoom }}</h3>
 		</div>
-	</div>
+		<div ng-repeat="message in rooms.messages">
+			<div ng-class-odd="'odd'" ng-class-even="'even'">
+				<span class="message-info">{{ message.name }}</span> - <span class="message-timestamp">{{ message.sentAt | date: fullDate }}</span>
+				</br>
+				<span class="message-content">{{ message.content }}</span>
+			</div>
+		</div>
+
+		<form class="form-inline" ng-submit="rooms.sendMessage(rooms.newMessage)" ng-show="rooms.currentRoom" >
+			<div class="row message-input">
+				<div class="col-md-8">
+				<input class="form-control input-lg" type="text" placeholder="Write your message." ng-model="rooms.newMessage"/>
+				</div>
+				<div class="col-md-3">
+				<button type="submit" id="submit" value="submit" class="btn btn-lg btn-default send-message" ng-disabled="!rooms.newMessage">Send Message</button>
+				</div>
+			</div>
+		</form>
+
 </section>

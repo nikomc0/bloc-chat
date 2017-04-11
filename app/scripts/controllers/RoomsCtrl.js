@@ -1,6 +1,8 @@
 (function () {
 	function RoomsCtrl(Room, Message, $uibModal, $cookies) {
 		this.rooms = Room.all;
+		this.currentRoom = null;
+		this.newMessage = null;
 		
 		this.open = function () {
 			$uibModal.open({
@@ -13,7 +15,15 @@
 			this.currentRoom = room.$value;
 			this.messages = Message.getRoomById(room.$id);
 			this.currentUser = $cookies.blocChatCurrentUser;
+			return this.chatRoom = room.$id;
 		};	
+		
+		this.sendMessage = function (newMessage) {
+			if (newMessage) {
+				Message.send(newMessage, this.chatRoom);
+				this.newMessage = '';
+			}
+		};
 	}
 	angular
 		.module('blocChat')

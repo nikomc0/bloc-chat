@@ -19,16 +19,6 @@ body {
 
 }
 
-.chat-rooms {
-	position: absolute;
-	right: 0;
-	left: 0;
-	background: rgba(0, 0, 0, .75);
-	width: 200px;
-	height: 100%;
-	padding-left: 20px;
-}
-
 h1 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
@@ -88,16 +78,6 @@ h3 {
 	color: dimgray; 
 }
 
-.left {
-	width:100%;
-	display: block;
-}
-.right {
-	padding-left:200px;
-	width:100%;
-	display: inline-block;
-}
-
 .messages h1 {
 	color: dimgrey;
 }
@@ -129,6 +109,38 @@ h3 {
 	color:lightslategrey;
 }
 
+.chat-rooms {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .75);
+	width: 20%;
+	height: 100%;
+	padding-left: 20px;
+}
+
 .chat-room {
 	font-weight:400;
+}
+
+.message-container {
+	position: absolute;
+    top: 0;
+    right: 0;
+	margin: 0 auto;
+    height: 100%;
+	width: 80%;
+    min-height: 100%;
+	overflow-y: scroll;
+}
+
+.form-inline .form-control {
+	width: 100% !important;
+}
+
+.message-input {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100% !important;
 }
