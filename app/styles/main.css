@@ -52,6 +52,11 @@ h3 {
 .rooms-list a:hover{
 	color:red;
 	text-decoration: none;
+	display: inline-flex;
+}
+
+.room-edit {
+	display: inline-block;
 }
 
 .room-names {
@@ -85,7 +90,7 @@ h3 {
 .odd {
 	padding: 15px;
 	color: dimgray;
-	background-color: lightgrey;
+	background: rgba (0, 0, 0, .3);
 }
 
 .even {
@@ -98,15 +103,27 @@ h3 {
 	font-size: 1rem;
 	letter-spacing: .05em;
 	font-weight: 600;
+	display: inline-flex;
+	padding-right: 5px;
+}
+
+.sender {
+	color: firebrick;
+	padding-right: 10px;
+	text-transform: capitalize;
 }
 
 .message-content {
+	font-family: helvetica;
 	font-size: 1rem;
+	font-weight: 300;
 }
 
 .message-timestamp {
 	font-size: 14px;
 	color:lightslategrey;
+	display: inline-flex;
+	margin-right: 10px;
 }
 
 .chat-rooms {
@@ -127,11 +144,19 @@ h3 {
 	position: absolute;
     top: 0;
     right: 0;
-	margin: 0 auto;
-    height: 100%;
+	padding-bottom: 3%;
+    height: 95%;
 	width: 80%;
-    min-height: 100%;
 	overflow-y: scroll;
+}
+
+.input-container {
+	position: absolute;
+    bottom: 0;
+    right: 0;
+	margin: 0 auto;
+    height: 10%;
+	width: 80%;
 }
 
 .form-inline .form-control {
@@ -143,4 +168,7 @@ h3 {
 	bottom: 0;
 	right: 0;
 	width: 100% !important;
+}
+
+.current-messages {
 }
