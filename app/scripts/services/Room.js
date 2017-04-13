@@ -2,7 +2,7 @@
 	function Room($firebaseArray, $location, $anchorScroll) {
 		var ref = firebase.database().ref().child('rooms');
 		var rooms = $firebaseArray(ref);
-		console.log(rooms);
+		
 		return {
 			all: rooms,
 			addRoom: function (newRoom) {
