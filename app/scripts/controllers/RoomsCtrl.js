@@ -18,11 +18,19 @@
 			return this.chatRoom = room.$id;
 		};	
 		
+		this.deleteRoom = function (room) {
+			Room.deleteRoom(room);
+		}
+		
 		this.sendMessage = function (newMessage) {
 			if (newMessage) {
 				Message.send(newMessage, this.chatRoom);
 				this.newMessage = '';
 			}
+		};
+		
+		this.gotoBottom = function () {
+			Room.gotoBottom();	
 		};
 	}
 	angular
